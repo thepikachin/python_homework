@@ -20,10 +20,3 @@ connection = mysql.connector.connect(
 
 country = input("Anna maakoodi: ")
 typesearch(country)
-
-#sql = (f"select type, count(*) from airport where iso_country = '{country}' group by type")
-#cursor = connection.cursor()
-#cursor.execute(sql)
-#result = cursor.fetchall()
-#for type in result:
-#    print(f"{type[0]}: {type[1]}")
