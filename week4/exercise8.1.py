@@ -16,4 +16,5 @@ cursor = connection.cursor()
 cursor.execute(sql)
 result = cursor.fetchall()
 airport = result[0]
+print(result)
 print(f"Lentokenttä {airport[1]} sijaitsee kunnassa {airport[2]}.")
